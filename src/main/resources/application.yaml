@@ -1,0 +1,14 @@
+spring:
+  application:
+   name:
+    sample-ai
+
+langchain4j:
+  open-ai:
+    chat-model:
+      api-key: //my api key here
+      model-name: gpt-3.5-turbo
+      temperature: 0.7
+      timeout: PT3M
+      log-requests: false
+      log-responses: false
