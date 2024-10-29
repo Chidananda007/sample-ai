@@ -11,4 +11,7 @@ public interface SampleAiService {
     @UserMessage("translate the following text {{text}}")
     String translate(@V("language") String language,
                      @V("text") String text);
+
+    @UserMessage("Say hello to {{name}}")
+    String wishMessage(String name);
 }
