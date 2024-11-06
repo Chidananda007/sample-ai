@@ -9,10 +9,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/open-ai")
 public class SampleAiController {
 
-    private final SampleAiService aiService;
+  private final SampleAiService aiService;
 
-    @GetMapping("/languages/{language}/translator")
-    public  String translate(@RequestParam("text") String text,@PathVariable("language") String language) {
-        return aiService.translate(language, text);
-    }
+  @GetMapping("/languages/{language}/translator")
+  public String translate(
+      @RequestParam("text") String text, @PathVariable("language") String language) {
+    return aiService.translate(language, text);
+  }
 }

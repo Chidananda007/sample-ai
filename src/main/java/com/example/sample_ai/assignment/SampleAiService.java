@@ -7,8 +7,7 @@ import dev.langchain4j.service.spring.AiService;
 
 @AiService
 public interface SampleAiService {
-    @SystemMessage("Your are a professional translator into {{language}}")
-    @UserMessage("translate the following text {{text}}")
-    String translate(@V("language") String language,
-                     @V("text") String text);
+  @SystemMessage("Your are a professional translator into {{language}}")
+  @UserMessage("translate the following text {{text}}")
+  String translate(@V("language") String language, @V("text") String text);
 }
